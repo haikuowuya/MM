@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext_border_background_shape">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="消费总额"
+            android:textColor="#FF666666"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="100元"
+            android:textColor="#FFF26660"
+            android:textSize="14sp"
+            tools:text="100"/>
+
+        <View
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="47.5dp"
+            android:background="#FFD7D7D7"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_discount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_pay_unchecked"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="不参与打折金额"
+        android:textColor="#FF666666"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:id="@+id/linear_discount_container"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext_border_background_shape"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="不参与打折金额"
+            android:textColor="#FF666666"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/et_discount_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:background="@null"
+            android:digits="0123456789"
+            android:gravity="right|center_vertical"
+            android:hint="询问服务员后输入"
+            android:padding="10dp"
+            android:textColor="#FFF26660"
+            android:textColorHint="#FF999999"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <CheckedTextView
+            android:id="@+id/ctv_red_packet"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:checkMark="@mipmap/ic_pay_checked"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:text="可用红包：共20000元,本次使用80元"
+            android:textColor="#FF666666"
+            android:textSize="16sp"/>
+
+        <include
+            layout="@layout/layout_vertical_line"/>
+
+        <CheckedTextView
+            android:id="@+id/ctv_balance"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:checkMark="@mipmap/ic_pay_unchecked"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:text="余额支付：共20元，本次使用20元"
+            android:textColor="#FF666666"
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_vertical_line"/>
+
+    <TextView
+        android:id="@+id/tv_pay_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="right|center_vertical"
+        android:padding="10dp"
+        android:text="实付金额：80元"
+        android:textColor="#FF666666"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/ButtonStyle"
+        android:layout_margin="20dp"
+        android:text="确认买单"/>
+
+
+</LinearLayout><!-- From: file:/D:/libo/android_studio_workspace/MM/app/src/main/res/layout/fragment_confirm_pay.xml -->

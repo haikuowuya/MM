@@ -1,0 +1,79 @@
+package com.maimengapp.hsh.fragment;
+
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.eowise.recyclerview.stickyheaders.OnHeaderClickListener;
+import com.maimengapp.hsh.R;
+import com.maimengapp.hsh.adapter.goods.GoodsGridAdapter;
+import com.maimengapp.hsh.base.BaseFragment;
+import com.maimengapp.hsh.model.GoodsItem;
+import com.maimengapp.hsh.stickyheader.SimpleSectionedGridAdapter;
+import com.maimengapp.hsh.stickyheader.ui.PinnedSectionGridView;
+import com.maimengapp.hsh.util.DataUtils;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * 商品Fragment界面
+ */
+public class GoodsFragment2 extends BaseFragment
+{
+    public static GoodsFragment2 newInstance()
+    {
+        GoodsFragment2 fragment = new GoodsFragment2();
+        return fragment;
+    }
+
+    PinnedSectionGridView mPinnedSectionGridView;
+    private List<GoodsItem> mGoodsItems;
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
+//        View view = inflater.inflate(R.layout.fragment_goods2, null);
+        mPinnedSectionGridView = new PinnedSectionGridView(mActivity, null);
+        return mPinnedSectionGridView;
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState)
+    {
+        super.onActivityCreated(savedInstanceState);
+        mPinnedSectionGridView.setNumColumns(2);
+        mGoodsItems = DataUtils.genMockGoodsItems();
+        GoodsGridAdapter goodsGridAdapter = new GoodsGridAdapter(mActivity, mGoodsItems);
+        SimpleSectionedGridAdapter simpleSectionedGridAdapter = new SimpleSectionedGridAdapter(
+                mActivity, goodsGridAdapter, R.layout.grid_goods_header_item,
+                R.id.frame_header_container, R.id.tv_text);
+        simpleSectionedGridAdapter.setGridView(mPinnedSectionGridView);
+        ArrayList<SimpleSectionedGridAdapter.Section> sections = new ArrayList<SimpleSectionedGridAdapter.Section>();
+        sections.add(new SimpleSectionedGridAdapter.Section(0, "跑步系列"));
+        sections.add(new SimpleSectionedGridAdapter.Section(4, "运动休闲"));
+        sections.add(new SimpleSectionedGridAdapter.Section(8, "保暖系列"));
+
+        simpleSectionedGridAdapter.setSections(sections.toArray(new SimpleSectionedGridAdapter.Section[0]));
+        mPinnedSectionGridView.setAdapter(simpleSectionedGridAdapter);
+
+    }
+
+    @Override
+    public String getFragmentTitle()
+    {
+        return getString(R.string.fragment_goods);
+    }
+
+    public class OnHeaderClickListenerImpl implements OnHeaderClickListener
+    {
+        public void onHeaderClick(View header, long headerId)
+        {
+            mActivity.showToast("" + headerId);
+        }
+    }
+
+}

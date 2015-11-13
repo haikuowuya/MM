@@ -1,0 +1,12 @@
+<resources>
+    <array name="array_search_key">
+        <item>篮球</item>
+        <item>跑步</item>
+        <item>休闲</item>
+        <item>户外/综训</item>
+        <item>T恤</item>
+        <item>毛衣/针织</item>
+        <item>裙装</item>
+        <item>外套</item>
+    </array>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FF000000"
+    android:gravity="center_vertical"
+    android:paddingLeft="15dp"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_search_border_background_shape">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:drawableLeft="@mipmap/ic_search"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:hint="请输入搜索的关键字"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="#FF999999"
+            android:imeOptions="actionSearch"
+             android:imeActionLabel="110"
+
+            android:textColorHint="#FF666666"/>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:gravity="center"
+        android:minWidth="60dp"
+        android:text="取消"
+        android:textColor="#FFFFFFFF"/>
+
+
+</LinearLayout>

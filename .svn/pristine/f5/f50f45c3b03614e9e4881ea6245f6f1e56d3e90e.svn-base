@@ -1,0 +1,60 @@
+// Generated code from Butter Knife. Do not modify!
+package com.maimengapp.hsh.fragment;
+
+import android.view.View;
+import butterknife.ButterKnife.Finder;
+import butterknife.ButterKnife.ViewBinder;
+
+public class PayFragment$$ViewBinder<T extends com.maimengapp.hsh.fragment.PayFragment> implements ViewBinder<T> {
+  @Override public void bind(final Finder finder, final T target, Object source) {
+    View view;
+    view = finder.findRequiredView(source, 2131624099, "field 'mCtvAlipay' and method 'onAlipay'");
+    target.mCtvAlipay = finder.castView(view, 2131624099, "field 'mCtvAlipay'");
+    view.setOnClickListener(
+      new butterknife.internal.DebouncingOnClickListener() {
+        @Override public void doClick(
+          android.view.View p0
+        ) {
+          target.onAlipay();
+        }
+      });
+    view = finder.findRequiredView(source, 2131624100, "field 'mCtvWechat' and method 'onWechat'");
+    target.mCtvWechat = finder.castView(view, 2131624100, "field 'mCtvWechat'");
+    view.setOnClickListener(
+      new butterknife.internal.DebouncingOnClickListener() {
+        @Override public void doClick(
+          android.view.View p0
+        ) {
+          target.onWechat();
+        }
+      });
+    view = finder.findRequiredView(source, 2131624101, "field 'mCtvUnionpay' and method 'onUnionpay'");
+    target.mCtvUnionpay = finder.castView(view, 2131624101, "field 'mCtvUnionpay'");
+    view.setOnClickListener(
+      new butterknife.internal.DebouncingOnClickListener() {
+        @Override public void doClick(
+          android.view.View p0
+        ) {
+          target.onUnionpay();
+        }
+      });
+    view = finder.findRequiredView(source, 2131624085, "field 'mTvPayCount'");
+    target.mTvPayCount = finder.castView(view, 2131624085, "field 'mTvPayCount'");
+    view = finder.findRequiredView(source, 2131624086, "method 'onPayOk'");
+    view.setOnClickListener(
+      new butterknife.internal.DebouncingOnClickListener() {
+        @Override public void doClick(
+          android.view.View p0
+        ) {
+          target.onPayOk();
+        }
+      });
+  }
+
+  @Override public void unbind(T target) {
+    target.mCtvAlipay = null;
+    target.mCtvWechat = null;
+    target.mCtvUnionpay = null;
+    target.mTvPayCount = null;
+  }
+}

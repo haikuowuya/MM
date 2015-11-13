@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFFFF">
+
+            <TextView
+                android:id="@+id/tv_fee_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="消费总额"
+                android:textColor="#FF666666"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/et_fee"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tv_fee_hint"
+                android:background="#FFFFFFFF"
+                android:digits="0123456789."
+                android:gravity="center|right"
+                android:hint="询问服务员后输入"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="#FFF26660"
+                android:textColorHint="#FF999999"
+                android:textSize="14sp"
+                />
+
+            <View
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="47.5dp"
+                android:background="#FFD7D7D7"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#FFFFFFFF"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="实付金额"
+                android:textColor="#FF666666"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_pay_count"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="80元"
+                android:textColor="#FFF26660"
+                android:textSize="14sp"
+                tools:text="80"/>
+        </RelativeLayout>
+
+        <include
+            layout="@layout/layout_vertical_line"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="选择支付方式"
+            android:textColor="#FF999999"
+            android:textSize="16sp"/>
+
+        <include
+            layout="@layout/layout_vertical_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFFFF"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <CheckedTextView
+                android:id="@+id/ctv_alipay"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:checkMark="@mipmap/ic_pay_checked"
+                android:drawableLeft="@mipmap/ic_alipay"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="支付宝支付"
+                android:textColor="#FF666666"
+                android:textSize="16sp"/>
+
+            <include
+                layout="@layout/layout_vertical_line"
+                />
+
+            <CheckedTextView
+                android:id="@+id/ctv_wechat"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:checkMark="@mipmap/ic_pay_unchecked"
+                android:drawableLeft="@mipmap/ic_wechat"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="微信支付"
+                android:textColor="#FF666666"
+                android:textSize="16sp"/>
+
+            <include
+                layout="@layout/layout_vertical_line"/>
+
+            <CheckedTextView
+
+                android:id="@+id/ctv_unionpay"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:checkMark="@mipmap/ic_pay_unchecked"
+                android:drawableLeft="@mipmap/ic_unionpay"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="银联支付"
+                android:textColor="#FF666666"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/layout_vertical_line"
+            />
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/ButtonStyle"
+            android:layout_margin="20dp"
+            android:text="确定"/>
+
+
+    </LinearLayout>
+</ScrollView>

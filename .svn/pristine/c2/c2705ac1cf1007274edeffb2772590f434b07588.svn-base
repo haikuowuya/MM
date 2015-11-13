@@ -1,0 +1,18 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item android:state_pressed="true">
+
+        <shape>
+            <solid android:color="#88F3513C"/>
+            <corners android:radius="4dp"/>
+        </shape>
+
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#FFF3513C"/>
+              <corners android:radius="4dp"/>
+        </shape>
+
+    </item>
+</selector><!-- From: file:/D:/libo/android_studio_workspace/MM/app/src/main/res/drawable/button_selector.xml -->

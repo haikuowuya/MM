@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#FFFFFFFF"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/linear_post_container"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/recycler_list_item_selector"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="4dp"
+            android:src="@mipmap/ic_community_post"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:drawableLeft="@mipmap/ic_community_post"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:text="我的帖子"
+            android:textColor="#FF333333"
+            android:textSize="14sp"
+            tools:text="我的帖子"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_msg_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/recycler_list_item_selector"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="4dp"
+            android:src="@mipmap/ic_community_msg"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@mipmap/ic_community_msg"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:text="我的消息"
+            android:textColor="#FF333333"
+            android:textSize="14sp"
+            tools:text="我的消息"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="亲密度：10"
+        android:textColor="#FFFF036E"
+        android:textSize="14sp"
+        tools:text="亲密度：10"/>
+</LinearLayout>

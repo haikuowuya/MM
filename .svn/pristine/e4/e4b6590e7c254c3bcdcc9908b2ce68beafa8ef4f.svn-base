@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\libo\android_studio_workspace\MM\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
+        <dex dex="D:\libo\android_studio_workspace\MM\app\build\intermediates\pre-dexed\debug\classes-2f7b4cf364184ea833e1adeec96e89cc49a0135d.jar" />
+    </item>
+    <item
+        jar="D:\libo\android_studio_workspace\MM\app\build\intermediates\exploded-aar\com.eowise\recyclerview-stickyheaders\0.5.2\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="bd665397d9b47a223c40cdbfb8143cf4f8880905">
+        <dex dex="D:\libo\android_studio_workspace\MM\app\build\intermediates\pre-dexed\debug\classes-a83ea1e89b0daf17fa9002fcbc437aa2454a3623.jar" />
+    </item>
+    <item
+        jar="D:\libo\android_studio_workspace\MM\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="D:\libo\android_studio_workspace\MM\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-e43e1ea230491d829617d2345f302fb227c33dc6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Steven\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="D:\libo\android_studio_workspace\MM\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-41b72c6efb0aeaeac8c592768a8568e22529a7c7.jar" />
+    </item>
+    <item
+        jar="D:\libo\android_studio_workspace\MM\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="D:\libo\android_studio_workspace\MM\app\build\intermediates\pre-dexed\debug\classes-9a6f615428f5706d5486dfce949fd85707ab17ad.jar" />
+    </item>
+    <item
+        jar="D:\libo\android_studio_workspace\MM\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="D:\libo\android_studio_workspace\MM\app\build\intermediates\pre-dexed\debug\classes-50c6cd2909dd8b41aa07398e352b29d36aff976b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Steven\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="D:\libo\android_studio_workspace\MM\app\build\intermediates\pre-dexed\debug\gson-2.3.1-1e0cf4f54b336511be22134002642c0bc26a6854.jar" />
+    </item>
+    <item
+        jar="D:\libo\android_studio_workspace\MM\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d96886efea7cc74fbb3abd0e3b51d5638fc57be0">
+        <dex dex="D:\libo\android_studio_workspace\MM\app\build\intermediates\pre-dexed\debug\classes-6b98fc4ffb4e5e487011eb6a27cfa48f1fb73f9f.jar" />
+    </item>
+    <item
+        jar="D:\libo\android_studio_workspace\MM\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3713f30726299231eddfb206043ebb72a2519b6f">
+        <dex dex="D:\libo\android_studio_workspace\MM\app\build\intermediates\pre-dexed\debug\classes-0b4f707c68b1f83380e7fc5b54e031dd00b50ba2.jar" />
+    </item>
+    <item
+        jar="D:\libo\android_studio_workspace\MM\app\build\intermediates\exploded-aar\com.github.siyamed\android-shape-imageview\0.9.3\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ee07783aa59eefdeacc107abf472f45f60272302">
+        <dex dex="D:\libo\android_studio_workspace\MM\app\build\intermediates\pre-dexed\debug\classes-2cc1e60564a0187513208e905a0fa894c602b870.jar" />
+    </item>
+    <item
+        jar="C:\Users\Steven\.gradle\caches\modules-2\files-2.1\net.sf.kxml\kxml2\2.3.0\ccbc77a5fd907ef863c29f3596c6f54ffa4e9442\kxml2-2.3.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ccbc77a5fd907ef863c29f3596c6f54ffa4e9442">
+        <dex dex="D:\libo\android_studio_workspace\MM\app\build\intermediates\pre-dexed\debug\kxml2-2.3.0-e35dc15cb7656764186926cf4f167298e247fa11.jar" />
+    </item>
+    <item
+        jar="D:\libo\android_studio_workspace\MM\app\build\intermediates\exploded-aar\in.srain.cube\ultra-ptr\1.0.9\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="021daaa9f802dc7b32914fa0f60ed5def978d8a0">
+        <dex dex="D:\libo\android_studio_workspace\MM\app\build\intermediates\pre-dexed\debug\classes-498cfd4ab76c97dcf849c61a010c565025ef20e7.jar" />
+    </item>
+    <item
+        jar="D:\libo\android_studio_workspace\MM\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="D:\libo\android_studio_workspace\MM\app\build\intermediates\pre-dexed\debug\classes-1029513e0d22aab98e440c93099f284c97ad335b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Steven\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\7.0.1\d5d13ea991eab0252e3710e5df3d6a9d4b21d461\butterknife-7.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="D:\libo\android_studio_workspace\MM\app\build\intermediates\pre-dexed\debug\butterknife-7.0.1-fcd49ebc985c1c6c7ecdf6c7b9b6c596b547bc43.jar" />
+    </item>
+
+</items>

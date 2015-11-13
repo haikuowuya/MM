@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_recycler_view"/>
+
+
+
+
+
+</FrameLayout><!-- From: file:/D:/libo/android_studio_workspace/MM/app/src/main/res/layout/fragment_goods.xml -->

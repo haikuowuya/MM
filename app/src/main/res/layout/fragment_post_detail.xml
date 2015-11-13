@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFFFF"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:src="@mipmap/ic_community_header"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_image"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+
+                android:text="张三"
+                android:textColor="#FFFF036E"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:layout_toRightOf="@+id/iv_image"
+                android:gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:text="2015-10-30"
+                android:textColor="#FF999999"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_image"
+                android:paddingTop="10dp"
+                android:text="361度最经济实惠，穿着跑步很舒服，鞋型非常非常帅气鞋子质量很好"
+                android:textColor="#FF333333"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_post_detail_image0"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_post_detail_image1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFFFF">
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="时尚复古跑鞋"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_zambia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@mipmap/ic_post_detail_zambia_red"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="88"
+                android:textColor="#FF999999"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_goods_name"
+                android:padding="10dp"
+                android:text="￥128"
+                android:textColor="#FFF43429"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_goods_name"
+                android:padding="10dp"
+                android:text="查看详情>"
+                android:textColor="#FF999999"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_msg_container"
+            android:layout_width="match_parent"
+            android:background="#FFFFFFFF"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:scrollbars="none">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-1dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFFFF"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+                <android.support.v4.view.ViewPager
+
+                    android:id="@+id/vp_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:id="@+id/linear_view_container"
+                    android:layout_width="100dp"
+                    android:layout_height="10dp"
+
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="2dp"
+                android:padding="10dp"
+                android:text="361度男鞋运动鞋2015心宽秋季网面复古慢跑鞋男轻便透气跑步鞋"
+                android:textColor="#FF333333"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@mipmap/ic_activity_time"
+                android:drawablePadding="4dp"
+                android:text="活动剩余8天"
+                android:textColor="#FF999999"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="4dp"
+                android:padding="10dp"
+                android:textColor="@color/color_price_color"
+                android:textSize="24sp"
+
+                tools:text="100"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#FFD7D7D7"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:drawableLeft="@mipmap/ic_goods_detail_view"
+                        android:drawablePadding="4dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="26"
+                        android:textColor="#FF999999"
+                        android:textSize="12sp"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFD7D7D7"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:drawableLeft="@mipmap/ic_goods_detail_zambia"
+                        android:drawablePadding="4dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="88"
+                        android:textColor="#FF999999"
+                        android:textSize="12sp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="商品详情"
+                android:textColor="#FF666666"
+                android:textSize="14sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#FFD7D7D7"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:padding="10dp"
+                android:text="@string/tv_goods_detail_desc"
+                android:textColor="#FF666666"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView><!-- From: file:/D:/libo/android_studio_workspace/MM/app/src/main/res/layout/fragment_activity_detail.xml -->

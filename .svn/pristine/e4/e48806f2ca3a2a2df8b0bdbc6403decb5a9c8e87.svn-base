@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.maimengapp.hsh.stickyheader.ui.HeaderLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_gravity="center"
+    android:background="#FFEBEBEB"
+    android:gravity="center"
+    android:id="@+id/frame_header_container"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/view_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#FFF8A85B"/>
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#FFEBEBEB"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#FFF8A85B"
+        android:textSize="18sp"
+        tools:text="精选"/>
+
+</com.maimengapp.hsh.stickyheader.ui.HeaderLayout><!-- From: file:/D:/libo/android_studio_workspace/MM/app/src/main/res/layout/grid_goods_header_item.xml -->

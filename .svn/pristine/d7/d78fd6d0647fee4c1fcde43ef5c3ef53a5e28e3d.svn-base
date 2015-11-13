@@ -1,0 +1,24 @@
+// Generated code from Butter Knife. Do not modify!
+package com.maimengapp.hsh.fragment;
+
+import android.view.View;
+import butterknife.ButterKnife.Finder;
+import butterknife.ButterKnife.ViewBinder;
+
+public class ActivityDetailFragment$$ViewBinder<T extends com.maimengapp.hsh.fragment.ActivityDetailFragment> implements ViewBinder<T> {
+  @Override public void bind(final Finder finder, final T target, Object source) {
+    View view;
+    view = finder.findRequiredView(source, 2131624077, "field 'mTvPrice'");
+    target.mTvPrice = finder.castView(view, 2131624077, "field 'mTvPrice'");
+    view = finder.findRequiredView(source, 2131624073, "field 'mViewPager'");
+    target.mViewPager = finder.castView(view, 2131624073, "field 'mViewPager'");
+    view = finder.findRequiredView(source, 2131624074, "field 'mLinearViewContainer'");
+    target.mLinearViewContainer = finder.castView(view, 2131624074, "field 'mLinearViewContainer'");
+  }
+
+  @Override public void unbind(T target) {
+    target.mTvPrice = null;
+    target.mViewPager = null;
+    target.mLinearViewContainer = null;
+  }
+}

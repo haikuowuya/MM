@@ -1,0 +1,171 @@
+package com.maimengapp.hsh.fragment;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.github.siyamed.shapeimageview.CircularImageView;
+import com.maimengapp.hsh.AboutActivity;
+import com.maimengapp.hsh.CommunityActivity;
+import com.maimengapp.hsh.GoodsActivity;
+import com.maimengapp.hsh.MainActivity;
+import com.maimengapp.hsh.PayActivity;
+import com.maimengapp.hsh.PhoneActivity;
+import com.maimengapp.hsh.R;
+import com.maimengapp.hsh.RechargeActivity;
+import com.maimengapp.hsh.adapter.menu.MenuRecyclerAdapter;
+import com.maimengapp.hsh.base.BaseFragment;
+import com.maimengapp.hsh.util.BitmapUtils;
+import com.maimengapp.hsh.util.PhotoUtils;
+import com.maimengapp.hsh.util.StorageUtils;
+
+import java.util.LinkedList;
+
+import butterknife.Bind;
+import butterknife.OnClick;
+
+/**
+ * Created by Steven on 2015/11/3 0003.
+ */
+public class  MenuFragment extends BaseFragment
+{
+    public static MenuFragment newInstance()
+    {
+        MenuFragment fragment = new MenuFragment();
+        return fragment;
+    }
+
+    /***
+     * 底部的功能菜单列表
+     */
+    @Bind(R.id.rv_recycler_view)
+    RecyclerView mRecyclerView;
+    @Bind(R.id.civ_photo)
+    CircularImageView mCircularImageView;
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
+        View view = inflater.inflate(R.layout.fragment_menu, null);
+        return view;
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState)
+    {
+        super.onActivityCreated(savedInstanceState);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(mActivity));
+        mRecyclerView.setAdapter(new MenuRecyclerAdapter(mActivity, genMockData(), new OnRecyclerItemClickListenerImpl()));
+    }
+
+    /***
+     * 充值话费按钮的点击事件
+     */
+    @OnClick(R.id.btn_recharge)
+    void onRechargeClick()
+    {
+        RechargeActivity.actionRecharge(mActivity);
+    }
+
+    /**
+     * 点击头像事件
+     */
+    @OnClick(R.id.civ_photo)
+    void onPhotoClcik()
+    {
+        PhotoUtils.showSelectDialog(mActivity);
+    }
+
+    @Override
+    public String getFragmentTitle()
+    {
+        return "菜单";
+    }
+
+    private LinkedList<MenuRecyclerAdapter.MenuItem> genMockData()
+    {
+        LinkedList<MenuRecyclerAdapter.MenuItem> items = new LinkedList<>();
+        items.add(new MenuRecyclerAdapter.MenuItem(R.mipmap.ic_menu_select, "精选"));
+        items.add(new MenuRecyclerAdapter.MenuItem(R.mipmap.ic_menu_goods, "商品"));
+        items.add(new MenuRecyclerAdapter.MenuItem(R.mipmap.ic_menu_pay, "付款"));
+        items.add(new MenuRecyclerAdapter.MenuItem(R.mipmap.ic_menu_community, "社区"));
+        items.add(new MenuRecyclerAdapter.MenuItem(R.mipmap.ic_menu_phone, "免费电话"));
+        items.add(new MenuRecyclerAdapter.MenuItem(R.mipmap.ic_menu_about, "关于本店"));
+        return items;
+    }
+
+    private class OnRecyclerItemClickListenerImpl implements MenuRecyclerAdapter.OnRecyclerItemClickListener
+    {
+        public void onItemClick(View view, MenuRecyclerAdapter.MenuItem menuItem)
+        {
+            switch (menuItem.resIcon)
+            {
+                case R.mipmap.ic_menu_community:
+                    CommunityActivity.actionCommunity(mActivity);
+                    break;
+                case R.mipmap.ic_menu_goods:
+                    GoodsActivity.actionGoods(mActivity);
+                    break;
+                case R.mipmap.ic_menu_about:
+                    AboutActivity.actionAbout(mActivity);
+                    break;
+                case R.mipmap.ic_menu_phone:
+                    PhoneActivity.actionFreePhone(mActivity);
+                    break;
+                case R.mipmap.ic_menu_select:
+                    if (mActivity instanceof MainActivity)
+                    {
+                        MainActivity mainActivity = (MainActivity) mActivity;
+                        mainActivity.toggle();
+                    } else
+                    {
+                        MainActivity.actionMain(mActivity);
+                    }
+                    break;
+                case R.mipmap.ic_menu_pay:
+//                    ConfirmPayActivity.actionConfirmPay(mActivity);
+                    PayActivity.actionPay(mActivity,"80元");
+                    break;
+
+            }
+
+        }
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        if (resultCode == Activity.RESULT_OK)
+        {
+            String imaegFilePath = null;
+            if (requestCode == PhotoUtils.REQUEST_FROM_PHOTO)
+            {
+                if (null != data && data.getData() != null)
+                {
+                    imaegFilePath = StorageUtils.getFilePathFromUri(mActivity, data.getData());
+                }
+            } else if (requestCode == PhotoUtils.REQUEST_FROM_CAMERA)
+            {
+                imaegFilePath = PhotoUtils.getFinalCameraImagePath();
+            }
+            if (null != imaegFilePath)
+            {
+                imaegFilePath = BitmapUtils.getCompressBitmapFilePath(mActivity, imaegFilePath);
+                Bitmap bitmap = BitmapUtils.scaleBitmap(imaegFilePath);
+                bitmap = BitmapUtils.rotateBitmap(imaegFilePath, bitmap);
+                mCircularImageView.setImageBitmap(bitmap);
+            } else
+            {
+                mActivity.showToast("图片选取失败");
+            }
+        }
+    }
+}

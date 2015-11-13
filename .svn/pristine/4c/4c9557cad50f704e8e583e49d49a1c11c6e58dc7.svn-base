@@ -1,0 +1,30 @@
+// Generated code from Butter Knife. Do not modify!
+package com.maimengapp.hsh.fragment;
+
+import android.view.View;
+import butterknife.ButterKnife.Finder;
+import butterknife.ButterKnife.ViewBinder;
+
+public class RechargeFragment$$ViewBinder<T extends com.maimengapp.hsh.fragment.RechargeFragment> implements ViewBinder<T> {
+  @Override public void bind(final Finder finder, final T target, Object source) {
+    View view;
+    view = finder.findRequiredView(source, 2131624123, "field 'mEtCardNo'");
+    target.mEtCardNo = finder.castView(view, 2131624123, "field 'mEtCardNo'");
+    view = finder.findRequiredView(source, 2131624124, "field 'mEtCardPwd'");
+    target.mEtCardPwd = finder.castView(view, 2131624124, "field 'mEtCardPwd'");
+    view = finder.findRequiredView(source, 2131624086, "method 'doRecharge'");
+    view.setOnClickListener(
+      new butterknife.internal.DebouncingOnClickListener() {
+        @Override public void doClick(
+          android.view.View p0
+        ) {
+          target.doRecharge();
+        }
+      });
+  }
+
+  @Override public void unbind(T target) {
+    target.mEtCardNo = null;
+    target.mEtCardPwd = null;
+  }
+}

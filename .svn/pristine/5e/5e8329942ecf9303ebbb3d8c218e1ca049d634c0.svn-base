@@ -1,0 +1,66 @@
+// Generated code from Butter Knife. Do not modify!
+package com.maimengapp.hsh.fragment;
+
+import android.view.View;
+import butterknife.ButterKnife.Finder;
+import butterknife.ButterKnife.ViewBinder;
+
+public class ConfirmPayFragment$$ViewBinder<T extends com.maimengapp.hsh.fragment.ConfirmPayFragment> implements ViewBinder<T> {
+  @Override public void bind(final Finder finder, final T target, Object source) {
+    View view;
+    view = finder.findRequiredView(source, 2131624081, "field 'mLinearDiscountContainer'");
+    target.mLinearDiscountContainer = finder.castView(view, 2131624081, "field 'mLinearDiscountContainer'");
+    view = finder.findRequiredView(source, 2131624083, "field 'mCtvRedPacket' and method 'onRedPacket'");
+    target.mCtvRedPacket = finder.castView(view, 2131624083, "field 'mCtvRedPacket'");
+    view.setOnClickListener(
+      new butterknife.internal.DebouncingOnClickListener() {
+        @Override public void doClick(
+          android.view.View p0
+        ) {
+          target.onRedPacket();
+        }
+      });
+    view = finder.findRequiredView(source, 2131624084, "field 'mCtvBalance' and method 'onBalance'");
+    target.mCtvBalance = finder.castView(view, 2131624084, "field 'mCtvBalance'");
+    view.setOnClickListener(
+      new butterknife.internal.DebouncingOnClickListener() {
+        @Override public void doClick(
+          android.view.View p0
+        ) {
+          target.onBalance();
+        }
+      });
+    view = finder.findRequiredView(source, 2131624085, "field 'mTvPayCount'");
+    target.mTvPayCount = finder.castView(view, 2131624085, "field 'mTvPayCount'");
+    view = finder.findRequiredView(source, 2131624080, "field 'mTvDiscount' and method 'onDiscount'");
+    target.mTvDiscount = finder.castView(view, 2131624080, "field 'mTvDiscount'");
+    view.setOnClickListener(
+      new butterknife.internal.DebouncingOnClickListener() {
+        @Override public void doClick(
+          android.view.View p0
+        ) {
+          target.onDiscount();
+        }
+      });
+    view = finder.findRequiredView(source, 2131624082, "field 'mEtDiscountFee'");
+    target.mEtDiscountFee = finder.castView(view, 2131624082, "field 'mEtDiscountFee'");
+    view = finder.findRequiredView(source, 2131624086, "method 'toPay'");
+    view.setOnClickListener(
+      new butterknife.internal.DebouncingOnClickListener() {
+        @Override public void doClick(
+          android.view.View p0
+        ) {
+          target.toPay();
+        }
+      });
+  }
+
+  @Override public void unbind(T target) {
+    target.mLinearDiscountContainer = null;
+    target.mCtvRedPacket = null;
+    target.mCtvBalance = null;
+    target.mTvPayCount = null;
+    target.mTvDiscount = null;
+    target.mEtDiscountFee = null;
+  }
+}

@@ -1,0 +1,30 @@
+<resources>
+     <string name="activity_login">361°</string>
+     <string name="fragment_login">@string/activity_login</string>
+     <string name="activity_recharge">充值</string>
+     <string name="fragment_recharge">充值</string>
+     <string name="activity_community">社区</string>
+     <string name="fragment_community">社区</string>
+     <string name="activity_goods">商品</string>
+     <string name="activity_contact">通讯录</string>
+     <string name="fragment_contact">@string/activity_contact</string>
+     <string name="activity_free_phone">免费电话</string>
+     <string name="fragment_free_phone">@string/activity_free_phone</string>
+     <string name="fragment_goods">@string/activity_goods</string>
+     <string name="activity_about">关于本店</string>
+     <string name="fragment_about">@string/activity_about</string>
+     <string name="activity_pay">付款</string>
+     <string name="activity_confirm_pay">确认付款</string>
+     <string name="fragment_pay">@string/activity_pay</string>
+     <string name="fragment_confirm_pay">@string/activity_confirm_pay</string>
+     <string name="activity_select">精选</string>
+     <string name="fragment_select">@string/activity_select</string>
+     <string name="activity_goods_detail">商品详情</string>
+     <string name="fragment_goods_detail">@string/activity_goods_detail</string>
+     <string name="activity_activity_detail">活动详情</string>
+     <string name="fragment_activity_detail">@string/activity_activity_detail</string>
+     <string name="activity_search">搜索</string>
+     <string name="fragment_search">@string/activity_search</string>
+     <string name="activity_post_detail">帖子详情</string>
+     <string name="fragment_post_detail">@string/activity_post_detail</string>
+</resources>

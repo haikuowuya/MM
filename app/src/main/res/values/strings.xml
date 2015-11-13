@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">361°</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="store_name">361°</string>
+    <string name="tv_goods_detail_desc">
+        1.360°透气内里，采用透气网布内里，透气、防臭、舒适、完美包裹双脚给你舒适的跑步新体验。\n
+        2.高密度穿棉细带，特质针织鞋带，通过一体合成的穿孔考古地结合鞋面，变宽的系带设计更加便捷舒适，不易脱落。\n
+        3.360°透气内里，采用透气网布内里，透气、防臭、舒适、完美包裹双脚给你舒适的跑步新体验。\n
+    </string>
+    <string name="tv_store_phone">0512-68903980</string>
+</resources>

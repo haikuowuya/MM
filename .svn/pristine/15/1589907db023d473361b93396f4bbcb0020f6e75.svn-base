@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+        <include
+            layout="@layout/layout_search_title"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center_vertical"/>
+
+        <include layout="@layout/layout_recycler_view"/>
+        <include layout="@layout/layout_gridview"/>
+    </LinearLayout>
+
+
+</FrameLayout><!-- From: file:/D:/libo/android_studio_workspace/MM/app/src/main/res/layout/fragment_search.xml -->

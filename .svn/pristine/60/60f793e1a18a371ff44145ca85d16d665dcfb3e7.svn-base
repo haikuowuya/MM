@@ -1,0 +1,38 @@
+// Generated code from Butter Knife. Do not modify!
+package com.maimengapp.hsh.fragment;
+
+import android.view.View;
+import butterknife.ButterKnife.Finder;
+import butterknife.ButterKnife.ViewBinder;
+
+public class LoginFragment$$ViewBinder<T extends com.maimengapp.hsh.fragment.LoginFragment> implements ViewBinder<T> {
+  @Override public void bind(final Finder finder, final T target, Object source) {
+    View view;
+    view = finder.findRequiredView(source, 2131624089, "field 'mEtUserName'");
+    target.mEtUserName = finder.castView(view, 2131624089, "field 'mEtUserName'");
+    view = finder.findRequiredView(source, 2131624090, "field 'mEtPwd'");
+    target.mEtPwd = finder.castView(view, 2131624090, "field 'mEtPwd'");
+    view = finder.findRequiredView(source, 2131624091, "field 'mBtnLogin' and method 'doLogin'");
+    target.mBtnLogin = finder.castView(view, 2131624091, "field 'mBtnLogin'");
+    view.setOnClickListener(
+      new butterknife.internal.DebouncingOnClickListener() {
+        @Override public void doClick(
+          android.view.View p0
+        ) {
+          target.doLogin();
+        }
+      });
+    view = finder.findRequiredView(source, 2131624093, "field 'mTvRegister'");
+    target.mTvRegister = finder.castView(view, 2131624093, "field 'mTvRegister'");
+    view = finder.findRequiredView(source, 2131624092, "field 'mTvFindPwd'");
+    target.mTvFindPwd = finder.castView(view, 2131624092, "field 'mTvFindPwd'");
+  }
+
+  @Override public void unbind(T target) {
+    target.mEtUserName = null;
+    target.mEtPwd = null;
+    target.mBtnLogin = null;
+    target.mTvRegister = null;
+    target.mTvFindPwd = null;
+  }
+}
